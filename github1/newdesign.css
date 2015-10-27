@@ -1,0 +1,44 @@
+body{
+background-color:white;
+background-image:url("backimg1.jpg");
+}
+#f1{
+margin-left:45%;
+margin-top:2%;
+
+}
+#f2{
+margin-left:70%;
+margin-top:3%;
+}
+
+
+
+form  input[type="submit"] {
+background-color: blue;
+border: solid;
+border-radius: 3px;
+
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 40px;
+text-transform: uppercase;
+width: 180px;
+
+
+}
+form  input[type="text"], input[type="password"], input [type="email"]{
+background-color: white;
+border: solid;
+border-radius: 3px;
+
+color: #5a5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 14px;
+height: 40px;
+outline: none;
+padding: 0px 10px;
+width: 250px;
+
+}

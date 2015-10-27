@@ -1,0 +1,125 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Best Login Page design in html and css</title>
+<link rel="stylesheet" type="text/css" href="newdesign.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").slideToggle(1000);
+    });
+});
+$(document).ready(function(){
+    $(".f11").focus(function(){
+        $(this).css("background-color", "#cccccc");
+    });
+	$(".f11").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+    
+});
+</script>
+<body>
+
+	<div id="f1">
+	<form action = "first.html" name = "myform1" method = "get" onsubmit="return validate1()">
+	<input type = "text" class = "f11" oninput="myfun()" placeholder="Username" name = "uname">
+	<input type = "password"class = "f11" placeholder="Password" name="pword">
+      <input type = "submit" value = "submit"/>	
+	</form>
+	</div>
+	
+	<div id = "f2">
+<form action = "first.html" name="myform2" method ="get" onsubmit="return validate2()">
+
+ <legend id="hide"><h1>Sign Up </h1></legend> 
+	<p><span style = "padding-left:51px"/><input type = "text" class = "f11" size="50" placeholder="First Name" name="fname"/></p>
+	
+	<p><span style = "padding-left:51px"/><input type="text"class = "f11" size="34"placeholder="Last Name"name="lname"/></p>
+	
+	<p><span style = "padding-left:51px"/> <input type = "text"class = "f11" size="34"placeholder="Contact Number"name="cnumber"/><p>
+	
+	<p><span style = "padding-left:51px"/> <input type = "text" class = "f11" size="34"placeholder="Email address"name="email"/></p>
+	
+	<p><span style = "padding-left:51px"/><input type = "text"class = "f11" size="34"placeholder="Doctor assign"name="dassign"/></p>
+
+	<p><span style = "padding-left:51px"/><input type = "text" class = "f11" size="34"placeholder="Disease Name "name="dname"/></p>
+	<br>
+	<p><span style = "padding-left:10px"/><input type = "submit" value = "Sign Up"/><span style = "padding-left:20px"/><input type = "submit" value = "Cancel"/></p>
+	</form>
+	
+	</div>
+	
+	<script type = "text/javascript">
+	function myfun()
+	{
+	 var iChars = "!@#$%^&*()+=-[]\\\';,./{}|\":<>?";
+
+          for (var i = 0; i < document.myform1.uname.value.length; i++) {
+           if (iChars.indexOf(document.myform1.uname.value.charAt(i)) != -1) {
+            alert ("Your username has special characters.These are not allowed");
+			 document.myform1.uname.focus();
+            return false;
+    }
+	
+}
+}
+	function validate1()
+      {
+      
+         if( document.myform1.uname.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.myform1.uname.focus();
+            return false;
+         }
+		 
+		 if( document.myform1.pword.value == "" )
+         {
+            alert( "Please provide your password!" );
+            document.myform1.pword.focus();
+            return false;
+         }
+		 
+		
+         return true;
+		 }
+		 
+		 function validate2()
+      {
+      
+         if( document.myform2.fname.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.myform2.fname.focus();
+            return false;
+         }
+		 
+		  if( document.myform2.email.value == "" )
+         {
+            alert( "Please provide your Email!" );
+            document.myform2.email.focus() ;
+            return false;
+         }
+		 if( document.myform2.cnumber.value == "" )
+         {
+            alert( "Please provide your Email!" );
+            document.myform2.cnumber.focus() ;
+            return false;
+         }
+		 if( document.myform2.dassign.value == "" )
+         {
+            alert( "Please provide your Email!" );
+            document.myform2.dassign.focus() ;
+            return false;
+         }
+		
+		 
+		  
+         
+		 }
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,73 @@
+HTML documentation:
+   Tags:
+    HTML is mark up language containing number of markup tags.
+	1.html heading:-<h1> to <h6> decresing order size and write in body tag.
+	
+	2.paragrapg <p>
+	
+	3.links:<a href = "path">display string on web page</a>
+	
+	5.image:-<img src ="path" alt="path alternate image" width=""height="">
+	
+	At W3Schools we always use lowercase HTML attribute names At W3Schools we always quote attributes with double quotes
+	
+	6.<pre> preformated text display content as like writen in code
+	
+	7.<style>:-<body style="background-color:lightgrey">
+	The bgcolor attribute, supported in older versions of HTML, is not valid in HTML5.
+	
+	8.in Style tag include:-color,font-family,text-align:center,font-size.
+	9.<b>-bold
+	  <strong>-bold with adding importance
+	  <i>-italic.
+	  <em>-emphasized with add semantic importance.
+	  <mark> highlight text.
+	  <del>-removed text
+	  <ins>-defim inserted text.
+	  <sub>-subscripted element.
+	  <sup>-superscripted tag.
+	  <q>-apply quatation mark around it.
+	  <abbr title="World Health Organization">WHO</abbr>
+	  The HTML <cite> element defines the title of a work. Browsers usually display <cite> elements in italic.usually use give name to image
+	  
+	  10.<bdo dir = "rtl" or "ltr">-display text right to left or left to right
+	      The HTML <var> element defines a mathematical variable
+		  
+     11.a:link
+	    a:visited
+		a:hover
+        a:active
+
+12.<map> tag to define an image-map.<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+
+13.table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+14.An iframe is used to display a web page within a web page.
+<iframe src="URL"></iframe>
+
+
+Form action
+  1.get and post method:-POST offers better security because the submitted data is not visible in the page address.
+     When you use GET, the form data will be visible in the page address.
+
+  2.<select name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+3.HTML input attributes
+   The value attribute specifies the initial value for an input field.
+   The readonly attribute specifies that the input field is read only (cannot be changed)
+   The disabled attribute specifies that the input field is disabled.
+   The size attribute specifies the size (in characters) for the input field.
+   The maxlength attribute specifies the maximum allowed length for the input field.
+   When present, it specifies that an <input> element should automatically get focus when the page loads.
+   

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login Page</title>
+		<style>
+				body { background-color:lightgray}
+				.p1{ position: absolute;
+    top: 45%;
+    left: 45%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+					 }
+					 
+	 </style>
+    </head>
+	<body>
+	<form action="second.html" name="myForm" onsubmit="validate();">
+	
+	<input type="text" name="Name" />
+	<input type="submit" value = "Submit"/>
+	</form>
+	<form action="second.html"  method = "post">
+	
+	<div class = "p1">
+	<div>
+	<b><span style = "padding-left:50px"/>Username:<span style = "padding-left:50px"/><input type="text" name = "uname"/><b>
+	</div>
+	<div>
+	<b>Password:<span style = "padding-left:50px"/><input type="password" name = "pword"/></b>
+	</div>
+	
+	<div >
+	<b><span style = "padding-left:40px;margin:30px"/><input type="submit" value = "Submit"/></b>
+	</div>
+	</div>
+	</form>
+	<script>
+function validate()
+      {
+      
+         if( document.myForm.Name.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.myForm.Name.focus();
+            return false;
+         }
+</script>
+	</body>
+</html>
+		
+			  

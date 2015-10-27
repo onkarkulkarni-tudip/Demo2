@@ -1,0 +1,38 @@
+Javascript Tutorial.
+1.Javascript changed content of HTML page
+	<p id="demo">JavaScript can change HTML content.</p>
+	<button type="button"
+	onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">
+	Click Me!</button>
+	
+2.change the image in HTML page
+	<img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+	<p>Click the light bulb to turn on/off the light.</p>
+	<script>
+	function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "pic_bulboff.gif";
+    } else {
+        image.src = "pic_bulbon.gif";
+    }
+	}
+	</script>
+	
+3.Giving Validation
+		<script>
+	function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+	}
+	</script>
